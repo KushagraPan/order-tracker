@@ -1,4 +1,4 @@
-# Order Tracker — DevOps & Observability (DataTalksClub AI Dev Tools Zoomcamp 2026, Homework 4)
+# Order Tracker — DevOps & Observability (DataTalksClub AI Dev Tools Zoomcamp 2026)
 
 Order Tracker is a small FastAPI service for creating orders and checking
 their status. This repository contains the complete Homework 4 solution:
