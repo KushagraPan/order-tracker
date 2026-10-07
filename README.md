@@ -12,8 +12,6 @@ The final objective, demonstrated live in this repo:
 
 **Deploy → Observe → Alert → Investigate → Fix → Verify → Recover**
 
-Homework mapping (DataTalksClub AI Dev Tools Zoomcamp 2026, HW4):
-
 | Question | What was implemented |
 |---|---|
 | Q1 — Health check | `GET /healthz` returns `{"status":"ok"}` |
