@@ -1,0 +1,7 @@
+{
+  "cmd": "/app/.venv/bin/python investigate.py --incident /app/incidents/20261007T121215-ResponderTest-0",
+  "pid": 60,
+  "headless": true,
+  "log": "/app/incidents/20261007T121215-ResponderTest-0/agent_stdout.log",
+  "started_at": "2026-10-07T12:12:15.837954+00:00"
+}

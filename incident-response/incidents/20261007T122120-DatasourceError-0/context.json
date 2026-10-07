@@ -1,0 +1,11 @@
+{
+  "incident_id": "20261007T122120-DatasourceError-0",
+  "status": "firing",
+  "alertname": "DatasourceError",
+  "severity": "critical",
+  "endpoint": "/api/orders/{order_id}",
+  "window": "5m",
+  "dashboard": "http://localhost:3000/d/order-tracker-requests",
+  "summary": "HTTP 5xx errors on Order Tracker order lookup endpoint",
+  "received_at": "2026-10-07T12:21:20.043619+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "cmd": "/app/.venv/bin/python investigate.py --incident /app/incidents/20261007T122120-DatasourceError-0",
+  "pid": 701,
+  "headless": true,
+  "log": "/app/incidents/20261007T122120-DatasourceError-0/agent_stdout.log",
+  "started_at": "2026-10-07T12:21:20.055859+00:00"
+}

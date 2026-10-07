@@ -1,0 +1,23 @@
+{
+  "endpoint": "/api/orders/{order_id}",
+  "window": "5m",
+  "alertname": "OrderTracker5xx",
+  "status": "firing",
+  "collected_at": "2026-10-07T12:23:50.168238+00:00",
+  "prometheus_5xx": {
+    "http_status": 200,
+    "body": "{\"status\":\"success\",\"data\":{\"resultType\":\"vector\",\"result\":[{\"metric\":{},\"value\":[1791375830.186,\"0.06780167163016304\"]}]}}"
+  },
+  "loki_logs": {
+    "http_status": 200,
+    "body": "{\"status\":\"success\",\"data\":{\"resultType\":\"streams\",\"result\":[{\"stream\":{\"code_file_path\":\"/app/app/main.py\",\"code_function_name\":\"otel_middleware\",\"code_line_number\":\"236\",\"detected_level\":\"info\",\"flags\":\"3\",\"observed_timestamp\":\"1791375819857671055\",\"scope_name\":\"order-tracker\",\"service_instance_id\":\"6f5b6617-1417-44b6-a8ea-66a621f2c0de\",\"service_name\":\"order-tracker\",\"severity_number\":\"9\",\"severity_text\":\"INFO\",\"span_id\":\"77b5cbf37e57e54c\",\"telemetry_sdk_language\":\"python\",\"telemetry_sdk_name\":\"opentelemetry\",\"telemetry_sdk_version\":\"1.45.0\",\"trace_id\":\"838028cbddc7b0af225c462383982a36\"},\"values\":[[\"1791375819857620736\",\"request method=GET route=/health target=/health status=404 duration_s=0.0005\"]]},{\"stream\":{\"code_file_path\":\"/app/app/main.py\",\"code_function_name\":\"otel_middleware\",\"code_line_number\":\"236\",\"detected_level\":\"info\",\"flags\":\"3\",\"observed_timestamp\":\"1791375824058823228\",\"scope_name\":\"order-tracker\",\"service_instance_id\":\"6f5b6617-1417-44b6-a8ea-66a621f2c0de\",\"service_name\":\"order-tracker\",\"severity_number\":\"9\",\"severity_text\":\"INFO\",\"span_id\":\"f1daf90b65790dd3\",\"telemetry_sdk_language\":\"python\",\"telemetry_sdk_name\":\"opentelemetry\",\"telemetry_sdk_version\":\"1.45.0\",\"trace_id\":\"67ad25bac374d78a9044036440d665b6\"},\"values\":[[\"1791375824058788864\",\"request method=GET route=/healthz target=/healthz status=200 duration_s=0.0007\"]]},{\"stream\":{\"code_file_path\":\"/app/app/main.py\",\"code_function_name\":\"otel_middleware\",\"code_line_number\":\"236\",\"detected_level\":\"info\",\"flags\":\"3\",\"observed_timestamp\":\"1791375824058934146\",\"scope_name\":\"order-tracker\",\"service_instance_id\":\"6f5b6617-1417-44b6-a8ea-66a621f2c0de\",\"service_name\":\"order-tracker\",\"severity_number\":\"9\",\"severity_text\":\"INFO\",\"span_id\":\"f1daf90b65790dd3\",\"telemetry_sdk_language\":\"python\",\"telemetry_sdk_name\":\"opentelemetry\",\"telemetry_sdk_version\":\"1.45.0\",\"trace_id\":\"67ad25bac374d78a9044036440d665b6\"},\"values\":[[\"1791375824058788864\",\"request method=GET route=/healthz target=/healthz status=200 dura"
+  },
+  "tempo_status": {
+    "http_status": 200,
+    "body": "GET /status/services\n+-------------------+---------+--------------+\n| SERVICE NAME      |  STATUS | FAILURE CASE |\n+-------------------+---------+--------------+\n| backend-scheduler | Running |              |\n| backend-worker    | Running |              |\n| cache-provider    | Running |              |\n| distributor       | Running |              |\n| internal-server   | Running |              |\n| live-store        | Running |              |\n| live-store-ring   | Running |              |\n| memberlist-kv     | Running |              |\n| metrics-generator | Running |              |\n| overrides         | Running |              |\n| overrides-api     | Running |              |\n| partition-ring    | Running |              |\n| querier           | Running |              |\n| query-frontend    | Running |              |\n| server            | Running |              |\n| store             | Running |              |\n| usage-report      | Running |              |\n+-------------------+---------+--------"
+  },
+  "app_health": {
+    "http_status": 200,
+    "body": "{\"status\":\"ok\"}"
+  }
+}

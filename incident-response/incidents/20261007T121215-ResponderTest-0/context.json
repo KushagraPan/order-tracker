@@ -1,0 +1,11 @@
+{
+  "incident_id": "20261007T121215-ResponderTest-0",
+  "status": "firing",
+  "alertname": "ResponderTest",
+  "severity": null,
+  "endpoint": "/api/orders/{order_id}",
+  "window": "5m",
+  "dashboard": "http://localhost:3000/d/order-tracker-requests",
+  "summary": "Test notification; no incident to fix",
+  "received_at": "2026-10-07T12:12:15.818708+00:00"
+}

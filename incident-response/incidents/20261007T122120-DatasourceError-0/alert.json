@@ -1,0 +1,30 @@
+{
+  "status": "firing",
+  "labels": {
+    "alertname": "DatasourceError",
+    "endpoint": "/api/orders/{order_id}",
+    "grafana_folder": "Order Tracker",
+    "rulename": "OrderTracker5xx",
+    "service": "order-tracker",
+    "severity": "critical"
+  },
+  "annotations": {
+    "Error": "invalid format of evaluation results for the alert definition C: looks like time series data, only reduced data can be alerted on.",
+    "dashboard": "http://localhost:3000/d/order-tracker-requests",
+    "description": "Server-side errors (HTTP 500-599) on endpoint /api/orders/{order_id} over the last 5 minutes. Query: sum(rate(http_server_request_count_total{http_route=\"/api/orders/{order_id}\",http_response_status_code=~\"5..\"}[5m])) > 0. Dashboard: http://localhost:3000/d/order-tracker-requests (Order Tracker - Requests and Errors). A 404 on /api/orders/standard-1002 must NOT fire this alert.",
+    "endpoint": "/api/orders/{order_id}",
+    "summary": "HTTP 5xx errors on Order Tracker order lookup endpoint",
+    "window": "5m"
+  },
+  "startsAt": "2026-10-07T12:20:50Z",
+  "endsAt": "0001-01-01T00:00:00Z",
+  "generatorURL": "http://localhost:3000/alerting/grafana/order-tracker-5xx/view?orgId=1",
+  "fingerprint": "f4a84e1692934574",
+  "silenceURL": "http://localhost:3000/alerting/silence/new?alertmanager=grafana&matcher=__alert_rule_uid__%3Dorder-tracker-5xx&matcher=endpoint%3D%2Fapi%2Forders%2F%7Border_id%7D&matcher=rulename%3DOrderTracker5xx&matcher=service%3Dorder-tracker&matcher=severity%3Dcritical&orgId=1",
+  "dashboardURL": "",
+  "panelURL": "",
+  "ruleUID": "order-tracker-5xx",
+  "values": null,
+  "valueString": "",
+  "orgId": 1
+}
