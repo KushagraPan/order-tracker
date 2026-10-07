@@ -1,0 +1,7 @@
+{
+  "cmd": "/app/.venv/bin/python investigate.py --incident /app/incidents/20261007T135649-OrderTracker5xx-0",
+  "pid": 7445,
+  "headless": true,
+  "log": "/app/incidents/20261007T135649-OrderTracker5xx-0/agent_stdout.log",
+  "started_at": "2026-10-07T13:56:49.995699+00:00"
+}

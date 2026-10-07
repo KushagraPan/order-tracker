@@ -2,13 +2,15 @@
 
 Receives alerts at POST /alerts on port 8001, saves the alert plus
 related evidence (affected endpoint, recent logs, traces, metrics query)
-to incident-response/incidents/<id>/, then starts the investigating
-assistant automatically in headless mode (detached subprocess, no TTY).
+to incident-response/incidents/<id>/, then launches the bundled
+investigate.py evidence collector automatically in headless mode
+(detached subprocess, no TTY).
 
-The headless assistant is ``investigate.py`` by default. Point
-INCIDENT_AGENT_CMD at a real coding assistant (e.g. an ``opencode run``
-or similar headless CLI) to swap implementations without changing this
-receiver.
+The genuine coding-agent loop runs on the host: see
+incident-response/watch-and-fix.ps1, which dispatches real headless
+``opencode.cmd run`` sessions with the incident directory as context.
+Point INCIDENT_AGENT_CMD at a different headless command to swap the
+in-container default without changing this receiver.
 """
 
 import json

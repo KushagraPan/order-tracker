@@ -1,0 +1,11 @@
+{
+  "incident_id": "20261007T135649-OrderTracker5xx-0",
+  "status": "resolved",
+  "alertname": "OrderTracker5xx",
+  "severity": "critical",
+  "endpoint": "/api/orders/{order_id}",
+  "window": "5m",
+  "dashboard": "http://localhost:3000/d/order-tracker-requests",
+  "summary": "HTTP 5xx errors on Order Tracker order lookup endpoint",
+  "received_at": "2026-10-07T13:56:49.985111+00:00"
+}
