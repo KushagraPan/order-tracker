@@ -1,0 +1,5 @@
+{
+    "incident":  "20261007T134650-OrderTracker5xx-0",
+    "cmd":  "opencode.cmd run (headless, --dir repo root, prompt + alert attachments)",
+    "startedAt":  "2026-10-07T13:50:06.1896337Z"
+}
